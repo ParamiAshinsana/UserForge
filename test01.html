@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UserForge</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    section {
+      position: relative;
+    }
+
+    .bulb {
+      width: 100px;
+      height: 150px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .bulb1 {
+      animation: blink 3s infinite alternate 0.2s;
+    }
+
+    .bulb2 {
+      animation: blink 3s infinite alternate 0.4s;
+    }
+
+    .bulb3 {
+      animation: blink 3s infinite alternate 0.6s;
+    }
+
+    .bulb4 {
+      animation: blink 3s infinite alternate 0.8s;
+    }
+
+    .bulb5 {
+      animation: blink 3s infinite alternate 1s;
+    }
+
+    .bulb6 {
+      animation: blink 3s infinite alternate 1.2s;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<section>
+  <img src="img/1.jpg" class="bulb bulb1">
+  <img src="img/2.jpg" class="bulb bulb2">
+  <img src="img/3.jpg" class="bulb bulb3">
+  <img src="img/4.jpg" class="bulb bulb4">
+  <img src="img/5.jpg" class="bulb bulb5">
+  <img src="img/6.jpg" class="bulb bulb6">
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

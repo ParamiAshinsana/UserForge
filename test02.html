@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UserForge</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+    }
+
+    .main_img{
+      position: relative;
+    }
+
+    .bulb {
+      width: 480px;
+      height: 300px;
+      position: absolute; /* Added to keep the images in the same place */
+      top: 47px; /* Adjust as needed */
+      right: 265px; /* Adjust as needed */
+      opacity: 0;
+      transition: opacity 1.8s ease;
+    }
+
+    .active {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+<section class="main_img">
+  <img src="img/1.png" class="bulb bulb1 active">
+  <img src="img/2.png" class="bulb bulb2">
+<!--  <img src="img/3.png" class="bulb bulb3">-->
+  <img src="img/4.png" class="bulb bulb4">
+  <img src="img/5.png" class="bulb bulb5">
+  <img src="img/6.png" class="bulb bulb6">
+</section>
+
+
+
+<script src="../HTML/assets/style/jquery/lib/jquery.min.js"></script>
+<script src="style/jquery/lib/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    function toggleBulbs() {
+      var activeBulb = $(".active");
+      var nextBulb = activeBulb.next(".bulb");
+
+      if (nextBulb.length === 0) {
+        nextBulb = $(".bulb").first();
+      }
+
+      activeBulb.removeClass("active");
+      nextBulb.addClass("active");
+
+      setTimeout(toggleBulbs, 2500); // Adjust the duration between bulb changes (in milliseconds)
+    }
+
+    setTimeout(toggleBulbs, 2500); // Start the animation after a delay
+  });
+</script>
+</body>
+
+</html>
