@@ -30,3 +30,17 @@ section .rabbit{
   pointer-events: none;
   animation: animateRabbit 15s linear infinite;
 }
+@keyframes animateRabbit {
+  0%{
+    transform: translateX(calc(100% + 100vw));
+  }
+  50%{
+    transform: translateX(calc(-100% - 100vw));
+  }
+  50.01%{
+    transform: translateX(calc(-100% - 100vw))rotateY(180deg);
+  }
+  100%{
+    transform: translateX(calc(100% + 100vw))rotateY(180deg);
+  }
+}
