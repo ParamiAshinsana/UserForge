@@ -130,3 +130,6 @@ section .tree{
   height: 50px;
   border-radius: 5px;
 }
+.login .inputBox #btn:hover{
+  background: #055160;
+}
