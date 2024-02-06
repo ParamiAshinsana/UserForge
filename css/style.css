@@ -127,4 +127,6 @@ section .tree{
   font-size: 1.25em;
   font-weight: 500;
   transition: 0.5s;
+  height: 50px;
+  border-radius: 5px;
 }
