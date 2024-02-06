@@ -114,3 +114,6 @@ section .tree{
   border: none;
   margin-bottom: 30px;
 }
+.login .inputBox ::placeholder{
+  color: #052c65;
+}
