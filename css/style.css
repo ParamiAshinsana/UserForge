@@ -74,3 +74,8 @@ section .tree{
   z-index: 1000;
   pointer-events: none;
 }
+.login{
+  position: relative;
+  padding: 60px;
+
+}
