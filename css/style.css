@@ -23,3 +23,10 @@ section .bg{
   object-fit: cover;
   pointer-events: none;
 }
+section .rabbit{
+  position: absolute;
+  scale: 0.65;
+  top: 200px;
+  pointer-events: none;
+  animation: animateRabbit 15s linear infinite;
+}
