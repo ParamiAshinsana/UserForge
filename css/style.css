@@ -133,3 +133,7 @@ section .tree{
 .login .inputBox #btn:hover{
   background: #055160;
 }
+.login .group{
+  display: flex;
+  justify-content: space-between;
+}
