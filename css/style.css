@@ -44,3 +44,10 @@ section .rabbit{
     transform: translateX(calc(100% + 100vw))rotateY(180deg);
   }
 }
+section .opposite-rabbit{
+  position: absolute;
+  scale: 0.65;
+  pointer-events: none;
+  animation: animateRabbits 15s linear infinite;
+  bottom: 340px;
+}
