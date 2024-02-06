@@ -102,3 +102,15 @@ section .tree{
 .login .inputBox{
   position: relative;
 }
+.login .inputBox input{
+  position: relative;
+  width: 100%;
+  padding: 1px 20px;
+  outline: none;
+  font-size: 1.25em;
+  color: #052c65;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  margin-bottom: 30px;
+}
